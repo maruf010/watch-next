@@ -2,6 +2,7 @@
 import { addProduct } from "@/app/actions/products/addProduct";
 import { useState } from "react";
 
+
 export default function AddProductForm() {
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");

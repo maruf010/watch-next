@@ -10,7 +10,7 @@ export default function Spinner() {
                     width={4}
                     margin={2}
                     radius={2}
-                    color="#FFA500"
+                    color="#21edcf"
                     loading={true}
                 />
             </div>

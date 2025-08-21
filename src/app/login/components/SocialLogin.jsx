@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from 'react'
 import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import { signIn, useSession } from 'next-auth/react';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
@@ -29,9 +29,9 @@ export default function SocialLogin() {
                 <div onClick={() => handleSocialLogin("google")} className='cursor-pointer'>
                     <FcGoogle type='button' size={30} />
                 </div>
-                <div onClick={() => handleSocialLogin("github")} className='cursor-pointer'>
+                {/* <div onClick={() => handleSocialLogin("github")} className='cursor-pointer'>
                     <FaGithub type='button' size={30} />
-                </div>
+                </div> */}
             </div>
         </div>
     )

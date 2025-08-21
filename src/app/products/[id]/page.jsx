@@ -8,8 +8,8 @@ export default async function ProductsDetailsPage({ params }) {
     const product = await productCollection.findOne({ _id: new ObjectId(p.id) });
     return (
         <div className='min-h-screen'>
-            <div className='m-3 lg:max-w-11/12 lg:mx-auto lg:flex items-center'>
-                <img src={product.img} alt={product.name} className='lg:border-none border rounded-2xl border-teal-500 w-full lg:w-1/2 h-auto mb-4' />
+            <div className='m-3 lg:max-w-11/12 lg:mx-auto lg:flex items-center gap-8'>
+                <img src={product.img} alt={product.name} className='lg:border-none border mt-5 lg:h-[500px] rounded-2xl border-teal-500 w-full lg:w-1/2 h-auto mb-4' />
                 <div>
                     <h1 className='text-2xl font-bold'>{product.name}</h1>
                     <p className='mt-2'>{product.description}</p>

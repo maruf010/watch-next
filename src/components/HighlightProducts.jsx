@@ -28,7 +28,7 @@ export default function HighlightProducts() {
             {/* Title */}
             <div className="text-center my-3">
                 <h1 className="text-3xl font-bold text-teal-500">
-                    🌟 Highlight Products
+                    Highlight Products
                 </h1>
                 <p className="text-gray-500 my-3">Our top featured items</p>
             </div>

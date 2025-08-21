@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic"; 
+// export const revalidate = 60; // cache 60 sec, তারপর fresh data
+
 import dbConnect, { collectionNameObj } from '@/lib/dbConnect';
 import Link from 'next/link';
 import React from 'react'
@@ -18,7 +21,7 @@ export default async function Products() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
                 {data.map((product, index) => (
                     <div key={index} className='border border-gray-300 p-4 rounded-lg hover:shadow-lg transition-shadow duration-300'>
-                        <img src={product.img} alt={product.name} className='w-full  mb-4 border border-gray-200 rounded-lg' />
+                        <img src={product.img} alt={product.name} className='w-full h-56 mb-4 border border-gray-200 rounded-lg' />
                         <div className='h-28'>
                             <h2 className='text-lg font-bold'>{product.name}</h2>
                             <p>{product.description}</p>
