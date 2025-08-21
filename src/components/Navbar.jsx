@@ -2,18 +2,22 @@
 import { signOut, useSession } from 'next-auth/react';
 import Link from 'next/link'
 import React from 'react'
+import Spinner from './Spinner';
 
 export default function Navbar() {
     const { data: session, status } = useSession();
     console.log(session);
+    if (status === "loading") return <Spinner></Spinner>;
 
     const navMenu = () => {
         return (
             <>
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/products"}>Products</Link></li>
-                {status == 'authenticated' && (
+                {status === "authenticated" ? (
                     <li><Link href={"/dashboard/AddProduct"}>Add Product</Link></li>
+                ) : (
+                    <li><Link href={"/login"}>Add Product</Link></li>
                 )}
                 <li><Link href={"/contacts"}>Contacts</Link></li>
             </>
@@ -47,7 +51,7 @@ export default function Navbar() {
             <div className="navbar-end">
                 {status == 'authenticated' ? (
                     <>
-                        <img src={session?.user?.image} alt={session?.user?.name} className="w-8 h-8 rounded-full mr-3" />
+                        <img src={session?.user?.image} alt={session?.user?.name} className="border border-gray-300 w-8 h-8 rounded-full mr-3" />
                         <li onClick={() => signOut({ callbackUrl: "/login" })} className="btn  rounded-2xl bg-teal-500 text-white">Logout</li>
                     </>) : (
                     <div className='flex gap-3'>

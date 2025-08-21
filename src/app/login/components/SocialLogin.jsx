@@ -17,7 +17,6 @@ export default function SocialLogin() {
 
     useEffect(() => {
         if (session?.data?.user) {
-            toast.success("Login successful!");
             router.push("/products");
         }
     }, [session?.data?.user]);
