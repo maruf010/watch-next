@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Apple Watch Series 9",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Latest Apple Watch with advanced health sensors, GPS, and always-on display.",
+        "price": 399.99
+    },
+    {
+        "name": "Samsung Galaxy Watch 6",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Premium smartwatch with AMOLED display, fitness tracking, and LTE support.",
+        "price": 349.99
+    },
+    {
+        "name": "Fitbit Versa 4",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Lightweight fitness smartwatch with heart rate monitoring and long battery life.",
+        "price": 179.99
+    },
+    {
+        "name": "Garmin Forerunner 265",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Running-focused smartwatch with GPS, performance analytics, and training readiness.",
+        "price": 429.99
+    },
+    {
+        "name": "Amazfit GTR 4",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Stylish AMOLED smartwatch with 14-day battery life and 150+ sports modes.",
+        "price": 229.99
+    },
+    {
+        "name": "Huawei Watch GT 4",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Premium smartwatch with fitness tracking, sleep monitoring, and Bluetooth calling.",
+        "price": 249.99
+    },
+    {
+        "name": "TicWatch Pro 5",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Wear OS smartwatch with Snapdragon processor and dual-layer display technology.",
+        "price": 349.99
+    },
+    {
+        "name": "Fossil Gen 6",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Classic design smartwatch with Wear OS, SpO2 tracking, and rapid charging.",
+        "price": 299.99
+    },
+    {
+        "name": "Amazfit T-Rex Ultra",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Rugged smartwatch built for outdoor adventures with military-grade durability.",
+        "price": 399.99
+    },
+    {
+        "name": "Noise ColorFit Pro 4",
+        "img": "https://i.ibb.co.com/9k2GRJtT/1.jpg",
+        "description": "Affordable smartwatch with calling, AMOLED display, and fitness features.",
+        "price": 99.99
+    }
+]
